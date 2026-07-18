@@ -2,8 +2,17 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
-      thsinis about page
+    <div className='text-amber-50'>
+      thsinis ab  out 
+      <div>sdvv</div>
+      <div>sdvv</div>
+      
+      <div>sdvv</div>
+      <div>sdvv</div>
+      <div>sdvv</div>
+      <div>sdvv</div>
+      <div>sdvv</div>
+      <div>sdvv</div>
     </div>
   )
 }
