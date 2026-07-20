@@ -4,6 +4,8 @@ import { lazy, Suspense } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Loader from "./Ui/animation/Loader";
 import Education from "./pages/Education";
+import MyProject from "./pages/MyProject";
+import Experience from "./pages/Experience";
 
 const Home = lazy(() => import("./pages/Home"))
 const About = lazy(() => import("./pages/About"))
@@ -25,6 +27,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/projects" element={<MyProject />} />
+            <Route path="/experience" element={<Experience />} />
           </Routes>
         </Suspense>
       </main>

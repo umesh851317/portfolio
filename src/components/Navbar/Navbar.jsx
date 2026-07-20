@@ -20,19 +20,19 @@ export default function Navbar() {
                             {/* Desktop Menu */}
                             <div className="hidden items-center gap-8 lg:flex">
                                    <Link to="/">Home</Link>
-                                   <Link to="/Skills">Skills</Link>
-                                   <Link to="/experience">Experience</Link>
-                                   <Link to="/projects">Projects</Link>
                                    <Link to="/education">Education</Link>
+                                   <Link to="/Skills">Skills</Link>
+                                   <Link to="/projects">Projects</Link>
+                                   <Link to="/experience">Experience</Link>
 
-                                   <div className="rounded-xl bg-linear-to-r from-pink-500 to-purple-500 p-px">
+                                   {/* <div className="rounded-xl bg-linear-to-r from-pink-500 to-purple-500 p-px">
                                           <Link
                                                  to="/contact"
                                                  className="block rounded-xl bg-black px-5 py-2"
                                           >
                                                  Contact Me
                                           </Link>
-                                   </div>
+                                   </div> */}
                             </div>
 
                             {/* Mobile Menu Button */}
@@ -48,12 +48,12 @@ export default function Navbar() {
                      {open && (
                             <div className="flex flex-col gap-2 border-t border-gray-800 bg-black px-6 py-6 lg:hidden  max-lg:p-2">
                                    <Link to="/" onClick={() => setOpen(false)} >Home</Link>
-                                   <Link to="/skills" onClick={() => setOpen(false)} >Skills</Link>
-                                   <Link to="/experience" onClick={() => setOpen(false)} >Experience</Link>
-                                   <Link to="/projects" onClick={() => setOpen(false)} >Projects</Link>
                                    <Link to="/education" onClick={() => setOpen(false)} >Education</Link>
+                                   <Link to="/skills" onClick={() => setOpen(false)} >Skills</Link>
+                                   <Link to="/projects" onClick={() => setOpen(false)} >Projects</Link>
+                                   <Link to="/experience" onClick={() => setOpen(false)} >Experience</Link>
 
-                                   <div className="mt-2 rounded-xl bg-linear-to-r from-pink-500 to-purple-500 p-px">
+                                   {/* <div className="mt-2 rounded-xl bg-linear-to-r from-pink-500 to-purple-500 p-px">
                                           <Link
                                                  to="/contact"
                                                  className="block rounded-xl bg-black px-5 py-2 text-center"
@@ -61,7 +61,7 @@ export default function Navbar() {
                                           >
                                                  Contact Me
                                           </Link>
-                                   </div>
+                                   </div> */}
                             </div>
                      )}
               </nav>
