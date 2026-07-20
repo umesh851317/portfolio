@@ -1,17 +1,18 @@
+import { uiColors } from "../utils/uiColors";
 const Home = () => {
        return (
-              <section className="flex w-full min-h-[80vh] items-center">
-                     <div className=" max-lg:mx-2 my-4 grid w-full max-w-7xl items-center gap-16 lg:grid-cols-2">
+              <section className="border-b-4 flex w-full min-h-[80vh] items-center">
+                     <div className=" max-lg:mx-2 my-8 grid w-full max-w-7xl items-center gap-16 lg:grid-cols-2">
                             {/* Left */}
-                            <div className=" flex flex-col gap-3 max-lg:order-2">
-                                   <p className="text-lg font-medium tracking-widest uppercase text-pink-500">
+                            <div className=" flex flex-col gap-5 max-lg:order-2">
+                                   <p className={`text-lg font-medium tracking-widest uppercase ${uiColors.textGradiant}`}>
                                           Full Stack MERN Developer
                                    </p>
 
                                    <div className="flex flex-col gap-5">
                                           <h1 className="text-5xl font-bold leading-tight md:text-6xl lg:text-5xl">
                                                  Hi, I'm{" "}
-                                                 <span className="bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-5xl text-transparent max-lg:leading-5 ">
+                                                 <span className={`text-5xl text-transparent max-lg:leading-5 ${uiColors.textGradiant}`}>
                                                         Umesh Patidar
                                                  </span>
                                           </h1>
@@ -49,7 +50,7 @@ const Home = () => {
 
                                    {/* Buttons */}
                                    <div className="flex  gap-2 pt-4">
-                                          <button className="rounded-xl bg-linear-to-r from-pink-500 to-purple-500 px-5 py-3 max-lg:py-1 font-semibold transition hover:bg-pink-700">
+                                          <button className={`rounded-xl px-5 py-3 max-lg:py-1 font-semibold transition ${uiColors.bgGradiant}`}>
                                                  View Projects
                                           </button>
 

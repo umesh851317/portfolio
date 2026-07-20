@@ -24,7 +24,6 @@ export default function Navbar() {
                                    <Link to="/experience">Experience</Link>
                                    <Link to="/projects">Projects</Link>
                                    <Link to="/education">Education</Link>
-                                   <Link to="/about">About</Link>
 
                                    <div className="rounded-xl bg-linear-to-r from-pink-500 to-purple-500 p-px">
                                           <Link
@@ -53,7 +52,6 @@ export default function Navbar() {
                                    <Link to="/experience" onClick={() => setOpen(false)} >Experience</Link>
                                    <Link to="/projects" onClick={() => setOpen(false)} >Projects</Link>
                                    <Link to="/education" onClick={() => setOpen(false)} >Education</Link>
-                                   <Link to="/about" onClick={() => setOpen(false)}>About</Link>
 
                                    <div className="mt-2 rounded-xl bg-linear-to-r from-pink-500 to-purple-500 p-px">
                                           <Link
