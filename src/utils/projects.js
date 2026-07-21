@@ -27,7 +27,7 @@ const projects = [
               image: "src/assets/url-shortner.png",
               tech: ["React", "Node.js", "MongoDB", "Tailwind"],
               github: "https://github.com/umesh851317/url-shortner",
-              live: "https://url-shortener.vercel.app",
+              live: "https://url-shortner-xi-blush.vercel.app/",
        },
 ];
 export default projects

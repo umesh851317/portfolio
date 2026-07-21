@@ -26,7 +26,7 @@ const MyProject = () => {
           >
             {/* Project Image */}
             <div className="group overflow-hidden rounded-3xl border border-gray-800">
-              <img
+              <img 
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
@@ -34,17 +34,17 @@ const MyProject = () => {
             </div>
 
             {/* Content */}
-            <div className="">
+            <div className="flex flex-col gap-5 ">
               <h3 className="text-4xl font-bold text-white">
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 mt-5 leading-8">
+              <p className="text-gray-400  leading-8">
                 {project.description}
               </p>
 
               {/* Tech Stack */}
-              <div className="flex flex-wrap gap-3 mt-8">
+              <div className="flex flex-wrap gap-3 ">
                 {project.tech.map((item) => (
                   <span
                     key={item}
@@ -56,7 +56,7 @@ const MyProject = () => {
               </div>
 
               {/* Buttons */}
-              <div className="flex gap-5 mt-10">
+              <div className="flex gap-5">
                 <a
                   href={project.github}
                   target="_blank"

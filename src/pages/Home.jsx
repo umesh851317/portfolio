@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { uiColors } from "../utils/uiColors";
 const Home = () => {
        return (
@@ -50,13 +51,16 @@ const Home = () => {
 
                                    {/* Buttons */}
                                    <div className="flex  gap-2 pt-4">
-                                          <button className={`rounded-xl px-5 py-3 max-lg:py-1 font-semibold transition ${uiColors.bgGradiant}`}>
+                                          <Link to="/projects"
+                                                 className={`rounded-xl px-5 py-3 max-lg:py-1 font-semibold transition ${uiColors.bgGradiant}`}>
                                                  View Projects
-                                          </button>
+                                          </Link>
 
-                                          <button className="rounded-xl border border-gray-500 px-5 py-3 max-lg:py-1 font-semibold transition hover:border-white hover:bg-white hover:text-black">
-                                                 Download Resume
-                                          </button>
+                                          <a href="https://drive.google.com/file/d/1BOezNPrJptISlwpu2DCdtSMYBvZx7Av-/view?usp=drive_link"
+                                                 target="_blank"
+                                                 className="rounded-xl border border-gray-500 px-5 py-3 max-lg:py-1 font-semibold transition hover:border-white hover:bg-white hover:text-black">
+                                                 View Resume
+                                          </a>
                                    </div>
                             </div>
 

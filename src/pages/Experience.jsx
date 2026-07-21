@@ -32,7 +32,7 @@ const Experience = () => {
   return (
     <section className="max-w-7xl mx-auto py-5">
       {/* Heading */}
-      <div className="mb-16">
+      <div className="mb-10">
         <h2 className="text-5xl font-bold text-white">
           Professional Journey
         </h2>
@@ -49,7 +49,7 @@ const Experience = () => {
           {experience.map((item) => (
             <div
               key={item.id}
-              className="rounded-3xl border border-gray-800 bg-gray-900 p-8 hover:border-pink-500 transition-all duration-300"
+              className="rounded-3xl border border-gray-800 bg-gray-900 p-8 max-md:p-6 hover:border-pink-500 transition-all duration-300"
             >
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>
@@ -85,7 +85,7 @@ const Experience = () => {
 
         {/* Right Side */}
         <div>
-          <div className="rounded-3xl border border-gray-800 bg-gray-900 p-8">
+          <div className="rounded-3xl border border-gray-800 bg-gray-900 p-8 max-md:p-6">
             <h3 className="text-2xl font-semibold text-white mb-8">
               Certifications
             </h3>
@@ -95,7 +95,9 @@ const Experience = () => {
                 const Icon = cert.icon;
 
                 return (
-                  <div
+                  <a
+                    href="https://drive.google.com/file/d/1K-SFx88rHg2P6xaEhh9YlbzMZ46zH50Y/view"
+                    target="_blank"
                     key={cert.id}
                     className="flex items-center gap-4 rounded-xl border border-gray-800 p-4 hover:border-pink-500 transition"
                   >
@@ -112,7 +114,7 @@ const Experience = () => {
                         {cert.issuer}
                       </p>
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>
