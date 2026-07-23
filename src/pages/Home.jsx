@@ -65,8 +65,8 @@ const Home = () => {
                             </div>
 
                             {/* Right */}
-                            <div className=" flex justify-center lg:justify-center">
-                                   <div className="flex h-80 w-80 items-center justify-center rounded-full border border-gray-700 bg-neutral-900">
+                            <div className=" hidden justify-center lg:justify-center">
+                                   <div className="  flex h-80 w-80 items-center justify-center rounded-full border border-gray-700 bg-neutral-900">
                                           <span className="text-lg text-gray-500">
                                                  Your Photo / Illustration
                                           </span>
